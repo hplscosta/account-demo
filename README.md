@@ -6,8 +6,8 @@ Account demo operation guide.
 There are two ways to deploy demo application:
 
 1) From Docker Hub:
-  - Download docker compose: docker-compose-dockerhub.yml
-  - Run command: docker-compose -f docker-compose-dockerhub.yml up -d
+  1.1) Download docker compose: docker-compose-dockerhub.yml
+  1.2) Run command: docker-compose -f docker-compose-dockerhub.yml up -d
 
 2) Locally:
  - Clone git repositories:
