@@ -1,0 +1,85 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Account Demo",
+		"_postman_id": "3e18a6ad-fa02-e5de-3373-0fc9e59b48e7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account Service API - Get Account",
+			"request": {
+				"url": "http://localhost:8080/account/hugo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Account Service API - Get All Accounts",
+			"request": {
+				"url": "http://localhost:8080/account",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Account Service API - Create Account",
+			"request": {
+				"url": "http://localhost:8080/account",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"hugo\",\n\t\"name\": \"Hugo Costa\",\n\t\"age\": 30,\n\t\"address\": {\n\t\t\"city\": \"Lisbon\",\n\t\t\"country\": \"Portugal\"\n\t}\n}"
+				},
+				"description": "Create account"
+			},
+			"response": []
+		},
+		{
+			"name": "Account UI - Create Account",
+			"request": {
+				"url": "http://localhost:8081/demo/account",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"hugo\",\n\t\"name\": \"Hugo Costa\",\n\t\"age\": 30,\n\t\"address\": {\n\t\t\"city\": \"Lisbon\",\n\t\t\"country\": \"Portugal\"\n\t}\n}"
+				},
+				"description": "Create account"
+			},
+			"response": []
+		}
+	]
+}
